@@ -7,7 +7,7 @@
 The application loads the 50 first records from a Jira service in the poc https://issues.jboss.org[] from the project = CLOUD.
 
 == Instructions
-* *Requirement:* A Neo4j Database
+* *Requirement:* A https://neo4j.com/download[Neo4j Database]
 * *Download:* git clone https://github.com/bindstone/collector-poc.git
 * *Install:* mvn clean install
 * *Configuration:* configure the file: application.properties
