@@ -2,7 +2,7 @@
 
 == PURPOSE
 
-This is a small POC to import a JIRA Database in Neo4J. The application is based on https://spring.io/[Spring.io] and https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher]
+*This* is a small POC to import a JIRA Database with the https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core/4.0.0[Jira rest client] in https://neo4j.com/[Neo4J]. The application is based on https://spring.io/[Spring.io] and https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher]
 
 The application loads the 50 first records from a Jira service in the poc https://issues.jboss.org[] from the project = CLOUD.
 
