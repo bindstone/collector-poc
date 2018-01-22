@@ -2,18 +2,19 @@
 
 == PURPOSE
 
-This is a small POC to import a JIRA Database in Neo4J
+This is a small POC to import a JIRA Database in Neo4J. The application is based on https://spring.io/[Spring.io] and https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher]
 
 The application loads the 50 first records from a Jira service in the poc https://issues.jboss.org[] from the project = CLOUD.
 
-The application is a Spring application with https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCYPHER] for the DAO.
-
 == Instructions
-Download: git clone https://github.com/bindstone/collector-poc.git
-Install: mvn clean install
-Run: mvn spring-boot:run
+* *Download:* git clone https://github.com/bindstone/collector-poc.git
+* *Install:* mvn clean install
+* *Configuration:* configure the file: application.properties
+* *Run:* mvn spring-boot:run
 
 == Links
+https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCYPHER] for communicate with the Neo4J database.
+
 https://atlassian.com/software/jira[Jira] Software development tool used by agile teams
 
 https://neo4j.com/sandbox-v2/[Neo4J Sandbox] without installation.
