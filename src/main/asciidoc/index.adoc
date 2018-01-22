@@ -1,0 +1,28 @@
+[source,java]
+:javabase: ../java/com/bindstone/collector
+:ressourcebase: ../resources
+COLLECTOR
+=========
+
+.Configuration
+application.properties
+
+For the connection to Jira
+----
+include::{ressourcebase}/application.properties[tags=collector]
+----
+For the connection to Neo4J
+----
+include::{ressourcebase}/application.properties[tags=neo4j]
+----
+
+.JCypher Build
+----
+include::{javabase}/nodefactory/IssueNodeFactory.java[tags=build]
+----
+
+.Neo4J
+This is a view on after connecting to the Neo4J web interface (http://127.0.0.1:7474/browser/[]) with modifying some colors of the elements.
+
+.View in Neo4j web interface
+image::/images/overview.png[overview]
