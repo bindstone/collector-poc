@@ -15,7 +15,9 @@ The application loads the 50 first records from a Jira service in the poc https:
 == Links
 https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCYPHER] for communicate with the Neo4J database.
 
-https://atlassian.com/software/jira[Jira] Software development tool used by agile teams
+https://atlassian.com/software/jira[Jira] Software development tool used by agile teams.
+
+https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core/4.0.0[jira-rest-java-client-core] Maven plugin for Java Rest client under licenses: Apache 2.0, Atlassian 3.0, BSD.
 
 https://neo4j.com/sandbox-v2/[Neo4J Sandbox] without installation.
 
