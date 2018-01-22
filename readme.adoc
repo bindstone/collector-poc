@@ -1,6 +1,9 @@
 = COLLECTOR
 
-== PURPOSE
+== Intro
+People ask me, why I am so fascinated from Neo4j. The first contact, I made with Neo4j was in Oslo on the https://2014.javazone.no/presentation.html?id=32b4dabd[JavaZone]. Since than I follow the growing of the technology year by year. Neo4j is still a https://db-engines.com/en/ranking/graph+dbms[leading Graph Database]. But why I am so fascinated? I created this small POC, perhaps you find it out in trying the https://neo4j.com/developer/cypher-query-language[Cypher language].
+
+== Purpose
 
 *This* is a small POC to import a JIRA Database with the https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core/4.0.0[Jira rest client] in https://neo4j.com/[Neo4j]. The application is based on https://spring.io/[Spring.io] and https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher]
 
