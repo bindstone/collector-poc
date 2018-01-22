@@ -2,27 +2,31 @@
 
 == PURPOSE
 
-*This* is a small POC to import a JIRA Database with the https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core/4.0.0[Jira rest client] in https://neo4j.com/[Neo4J]. The application is based on https://spring.io/[Spring.io] and https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher]
+*This* is a small POC to import a JIRA Database with the https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core/4.0.0[Jira rest client] in https://neo4j.com/[Neo4j]. The application is based on https://spring.io/[Spring.io] and https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher]
 
 The application loads the 50 first records from a Jira service in the poc https://issues.jboss.org[] from the project = CLOUD.
 
 == Instructions
+* *Requirement:* A Neo4j Database
 * *Download:* git clone https://github.com/bindstone/collector-poc.git
 * *Install:* mvn clean install
 * *Configuration:* configure the file: application.properties
 * *Run:* mvn spring-boot:run
 
 == Links
-https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCYPHER] for communicate with the Neo4J database.
+https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher] for communicate with the Neo4j database.
 
 https://atlassian.com/software/jira[Jira] Software development tool used by agile teams.
 
 https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core/4.0.0[jira-rest-java-client-core] Maven plugin for Java Rest client under licenses: Apache 2.0, Atlassian 3.0, BSD.
 
-https://neo4j.com/sandbox-v2/[Neo4J Sandbox] without installation.
+https://neo4j.com/sandbox-v2/[Neo4j Sandbox] without installation.
 
-http://www.graphenedb.com/[GraphenDB] Neo4J Cloud Graph Database.
+http://www.graphenedb.com/[GraphenDB] Neo4j Cloud Graph Database.
 
 == Example of Graph data view
-Use the Neo4J browser: http://localhost:7474/browser/
+Use the Neo4j browser: http://localhost:7474/browser/
 image:https://github.com/bindstone/collector-poc/blob/master/src/main/asciidoc/images/overview.png[]
+
+== Hint
+For this implementation I used https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher]. Alternatives could be http://projects.spring.io/spring-data-neo4j[Spring Data Neo4j] or https://github.com/neo4j-contrib/neo4j-jdbc[neo4j-jdbc] combined with as example http://www.mybatis.org/mybatis-3/[MyBatis]. Look on https://neo4j.com/developer/java/[Using Neo4j from Java].
