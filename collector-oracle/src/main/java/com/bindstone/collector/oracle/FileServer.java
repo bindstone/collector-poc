@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.util.Properties;
 
 public class FileServer {
 
@@ -36,10 +37,16 @@ public class FileServer {
 
     static class FileHandler implements HttpHandler {
         public void handle(HttpExchange httpExchange) throws IOException {
-            File file = new File("/Users/qs/Desktop/export_sql/gen/ALL_OBJECTS.csv");
-            httpExchange.sendResponseHeaders(200, file.length());
+
+            Properties config = Config.get();
+            File target = new File(config.getProperty("target"));
+            File allObjectFile = new File(target, "all_object.csv");
+
+            System.out.println("File prepared:" + allObjectFile.getAbsolutePath());
+
+            httpExchange.sendResponseHeaders(200, allObjectFile.length());
             OutputStream os = httpExchange.getResponseBody();
-            InputStream is = new FileInputStream(file);
+            InputStream is = new FileInputStream(allObjectFile);
             IOUtils.copy(is, os);
             os.close();
             is.close();

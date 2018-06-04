@@ -14,6 +14,7 @@ public class Config {
            properties.put("user","sa");
            properties.put("password","sa");
            properties.put("url","jdbc:oracle:thin:@localhost:32771:xe");
+           properties.put("target","./target/export/");
         }
         return properties;
     }
