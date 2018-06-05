@@ -3,11 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
-
+   
    <groupId>com.bindstone</groupId>
-   <artifactId>collector</artifactId>
+   <artifactId>collector-pom</artifactId>
    <packaging>pom</packaging>
    <version>1.0-SNAPSHOT</version>
+
+   <name>collector-pom</name>
+   <description>ORACLE POM -&gt; NEO4J</description>
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,10 +20,19 @@
       <maven.compiler.target>1.8</maven.compiler.target>
    </properties>
 
-   <modules>
-      <module>collector-jira</module>
-      <module>collector-pom</module>
-      <module>collector-oracle</module>
-   </modules>
-   
+   <dependencies>
+      <dependency>
+         <groupId>org.apache.maven</groupId>
+         <artifactId>maven-model</artifactId>
+         <version>3.5.3</version>
+      </dependency>
+
+      <dependency>
+         <groupId>net.iot-solutions.graphdb</groupId>
+         <artifactId>jcypher</artifactId>
+         <version>3.9.0</version>
+      </dependency>
+
+   </dependencies>
+
 </project>
